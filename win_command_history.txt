@@ -1,0 +1,9 @@
+a
+pushd C:\WORKS\WS\Arduino
+gitk
+
+git init
+g a .
+gitk
+
+============EOF============
