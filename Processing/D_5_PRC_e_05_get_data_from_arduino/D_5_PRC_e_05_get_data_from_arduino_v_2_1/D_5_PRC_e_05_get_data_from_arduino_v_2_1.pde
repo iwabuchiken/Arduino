@@ -1,5 +1,5 @@
 /*
-  File: D-5_PRC_e-05_get_data_from_arduino_v-2.0
+  File: D-5_PRC_e-05_get_data_from_arduino_v-2.1
   Description: Get data from arduino via serial
   Source: 
   
@@ -10,7 +10,7 @@ color c;
 PFont font;
 Serial port;
 String arduinoPort;
-String message;
+String msg = "";
 
 int portAvail = 0;
 int portNoAvail = 0;
@@ -26,7 +26,8 @@ void setup(){
 
     font = loadFont("Gabriola-32.vlw");
     
-    textFont(font, 64);
+//    textFont(font, 64);
+    textFont(font, 32);
 
     // Serial
     if(Serial.list().length < 1) {
@@ -62,21 +63,40 @@ void draw(){
 //    if (port.available > 0 && portAvail == 0) {
       if (port.available() > 0) {
      
-         println("Port => Available");
+//         println("Port => Available");
          
-         String msg = "";
+//         String msg = "";
          
-         while (port.available() > 0) {
+//         while (port.available() > 0) {
            
-             msg += port.readString();
+         int inByte = port.read();
+         
+         if (inByte != 10) {
+           
+           msg = msg + char(inByte);
+           
+         } else {
+           
+           println("inByte => 10");
+           
+           if (msg.length() > 0) {
+            
+              println("msg=" + msg);
+              
+              text(msg, 10, 100);
+           }
+           
+         }//if (inByte != 10) {
+           
+//         msg += port.readString();
              
-         }//while (port.available() > 0) {
+//         }//while (port.available() > 0) {
 //         println(port.readString());
 //         Serial.flush();
          
 //         msg = port.readString();
          
-         println("msg=" + msg);
+//         println("msg=" + msg);
          
          portAvail = 1;
          portNoAvail = 0;
