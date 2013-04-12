@@ -1,9 +1,10 @@
-a
 pushd C:\WORKS\WS\Arduino
 gitk
 
 git init
 g a .
 gitk
+
+g p origin master
 
 ============EOF============
