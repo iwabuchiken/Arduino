@@ -44,6 +44,8 @@ void setup()
 
 void loop()
 {
+    turn_on_pins[0] = random(number_of_anode_pins) + 6;
+    
     for (int i = 0; i < number_of_cathode_pins; i++) {
         digitalWrite(cathode_pins[i], HIGH);  // 表示桁を選択
         digitalWrite(turn_on_pins[i], HIGH); // 表示するセグメントのアノードをHIGHにする
