@@ -1,3 +1,5 @@
+#include <LiquidCrystal.h>
+#include <Servo.h>
 /*
   File: D_11_v_1_0_C_1_v_1
   Behavior: 7-seg LED
@@ -10,12 +12,25 @@
 /*******************************************
     Variables: Constants
 ********************************************/
-/* Segment: a,b,c  */
+/* Segment: a,b,c  
+  Arduino        Module
+  6              1(Left most pin)
+  7              2
+  8              3
+  9              4
+  10              5
+  11              
+  12              
+
+*/
 const int anode_pins[] = {6, 7, 8,
                           9, 10, 11,
                           12
                         };
-                        
+/*  1 => Unit
+    2 => 10s
+    3 => 100s
+*/
 const int cathode_pins[] = {1, 2, 3};
   
 const int number_of_anode_pins = sizeof(anode_pins) / sizeof(anode_pins[0]);
