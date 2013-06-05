@@ -1,9 +1,9 @@
 /*
-  File: D-15_v_1_0_e_1
+  File: D_15_v_2_0_e_1_print_number
   Behavior: 7-seg LED
   Ports used:
 
-  Date: 2013/06/03 11:19:33
+  Date: 2013/06/03 16:08:31
 
 */
 
@@ -28,14 +28,16 @@ LiquidCrystal lcd(12, 11, 10, 5, 4, 3, 2);
     Functions: Basics
 ********************************************/
 void setup() {
-  
-  // REF http://stackoverflow.com/questions/9217084/arduino-lcd-only-showing-black-boxes-on-bottom-row answered Feb 10 '12 at 13:10
-  delay(1000);
-  
   lcd.begin(16, 2);
   
   lcd.print("hello, world!");
 }
 
-void loop() {}
+void loop() {
+
+//    lcd.setCursor(0, 1);
+//    
+//    lcd.print(millis()/1000);
+
+}
 
