@@ -27,15 +27,41 @@ LiquidCrystal lcd(12, 11, 10, 5, 4, 3, 2);
 /*******************************************
     Functions: Basics
 ********************************************/
-void setup() {
-  
-  // REF http://stackoverflow.com/questions/9217084/arduino-lcd-only-showing-black-boxes-on-bottom-row answered Feb 10 '12 at 13:10
-  delay(1000);
-  
+//void setup() {
+//  
+//  // REF http://stackoverflow.com/questions/9217084/arduino-lcd-only-showing-black-boxes-on-bottom-row answered Feb 10 '12 at 13:10
+//  delay(1000);
+//  
+//  lcd.begin(16, 2);
+//  
+////  lcd.setCursor(0, 0);
+////  
+//////  lcd.print("hello, world!");
+//////  lcd.print("hello, world! Hello!!!");
+////  lcd.print("Yeeeeeees!!");
+//
+//}
+//
+//void loop() {
+//
+//    lcd.setCursor(0, 0);
+//  
+////  lcd.print("hello, world!");
+////  lcd.print("hello, world! Hello!!!");
+//    lcd.print("Yeeeeeees!!");
+//
+//}
+
+void setup()
+{
+  Serial.begin( 9600 );
   lcd.begin(16, 2);
-  
-  lcd.print("hello, world!");
+  lcd.clear();
 }
 
-void loop() {}
-
+void loop()
+{
+  lcd.setCursor(0,0);
+  lcd.println( "hello world! OHH! ");
+  delay(1000);
+}
