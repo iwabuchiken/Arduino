@@ -1,0 +1,16 @@
+* C:\WORKS\WS\Arduino\Simulations\Yoneda-p88__Full-rectifier__with-C=100u_SINE=50hz.asc
+D1 0 N003 D
+D2 N003 N002 D
+D3 0 N001 D
+D4 N001 N002 D
+R1 N002 0 200
+V1 N001 N003 SINE(0 5 50)
+C1 N002 0 100u
+.model D D
+.lib C:\WORKS\PROGRAMS\LTspiceIV\lib\cmp\standard.dio
+.tran 100m
+* N001
+* N003
+* n002
+.backanno
+.end

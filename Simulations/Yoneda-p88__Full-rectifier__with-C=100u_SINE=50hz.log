@@ -1,0 +1,22 @@
+Circuit: * C:\WORKS\WS\Arduino\Simulations\Yoneda-p88__Full-rectifier__with-C=100u_SINE=50hz.asc
+
+.OP point found by inspection.
+
+Date: Sun Jun 23 15:39:15 2013
+Total elapsed time: 0.050 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2444
+traniter = 2444
+tranpoints = 1078
+accept = 1073
+rejected = 5
+matrix size = 4
+fillins = 1
+solver = Normal
+Matrix Compiler1:      12 opcodes  0.1/[0.1]/0.2
+Matrix Compiler2: 296 ƒoƒCƒg object code size  0.2/0.2/[0.1]
+
+
