@@ -1,0 +1,26 @@
+Circuit: * C:\WORKS\WS\Arduino\Simulations\Yoneda-p52__v2__2-Cs-series.asc
+
+Limiting rise time of source v1 to 0.001
+Limiting fall time of source v1 to 0.001
+WARNING: Node N005 is floating.
+
+.OP point found by inspection.
+
+Date: Sun Jun 23 23:12:39 2013
+Total elapsed time: 0.042 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2168
+traniter = 2168
+tranpoints = 1085
+accept = 1075
+rejected = 10
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 128 ƒoƒCƒg object code size  0.1/0.1/[0.0]
+Matrix Compiler2: off  [0.1]/0.2/0.1
+
+
