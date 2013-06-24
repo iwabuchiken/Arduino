@@ -2,7 +2,7 @@ Circuit: * C:\WORKS\WS\Arduino\Simulations\Yoneda-p88__Full-rectifier__with-C=10
 
 .OP point found by inspection.
 
-Date: Sun Jun 23 15:40:37 2013
+Date: Mon Jun 24 12:04:40 2013
 Total elapsed time: 0.054 seconds.
 
 tnom = 27
@@ -16,7 +16,7 @@ rejected = 6
 matrix size = 4
 fillins = 1
 solver = Normal
-Matrix Compiler1: 212 ƒoƒCƒg object code size  0.1/0.1/[0.1]
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: off  [0.1]/0.2/0.1
+Matrix Compiler2: off  [0.0]/0.1/0.1
 
 
