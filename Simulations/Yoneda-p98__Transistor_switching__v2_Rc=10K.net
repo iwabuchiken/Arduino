@@ -1,0 +1,13 @@
+* C:\WORKS\WS\Arduino\Simulations\Yoneda-p98__Transistor_switching__v2_Rc=10K.asc
+R1 N004 N003 1k
+R2 N005 0 0.0001
+V2 N001 0 5
+Q1 N002 N004 N005 0 NPN
+V1 N003 0 PULSE(0 1 10m 0 0 10m 20m)
+R3 N001 N002 10k
+.model NPN NPN
+.model PNP PNP
+.lib C:\WORKS\PROGRAMS\LTSPIC~1\lib\cmp\standard.bjt
+.tran 100m
+.backanno
+.end
