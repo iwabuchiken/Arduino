@@ -1,0 +1,13 @@
+* C:\WORKS\WS\Arduino\Simulations\Yoneda\Yoneda-p102_Tr-switching_Re2.asc
+V1 N003 0 PULSE(0 1 10m 0 0 10m 20m)
+R1 N003 N004 1k
+R2 N005 0 0.0001
+R3 N001 N002 10k
+V2 N001 0 5v
+Q1 N002 N004 N005 0 NPN
+.model NPN NPN
+.model PNP PNP
+.lib C:\WORKS\PROGRAMS\LTspiceIV\lib\cmp\standard.bjt
+.tran 100m
+.backanno
+.end
