@@ -1,0 +1,23 @@
+* C:\WORKS\WS\Arduino\Simulations\Yoneda\D-35_v-1.0_e-1_multi-vib.asc
+Q1 N003 N005 0 0 NPN
+Q2 N006 N004 0 0 NPN
+C1 N005 N006 0.1u V=25 Irms=39m Rser=2.8 Lser=0 mfg="Nichicon" pn="UPR1E100MAH" type="Al electrolytic"
+C2 N004 N003 0.1u V=25 Irms=24m Rser=5 Lser=0
+R1 N001 N004 5k
+R2 N001 N005 5k
+R3 N001 N003 200
+R4 N001 N002 200
+V1 N001 0 3v
+D1 N002 N006 D
+.model D D
+.lib C:\WORKS\PROGRAMS\LTSPIC~1\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\WORKS\PROGRAMS\LTSPIC~1\lib\cmp\standard.bjt
+.tran 3
+* n003
+* n006
+* n004
+* n005
+.backanno
+.end
